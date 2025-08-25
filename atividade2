@@ -90,4 +90,29 @@ h1{
         }
 }
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="pag1">
+        <div id="box"> </div>
+        <img src="" />
+        <div id="texto">
+            <p id="ola"> OLÁ</p>
+            <H1> <strong>Meu nome é Ágatha.</strong> </H1>
+            <p>
+                Estudante do Ensino Médio e cursando <br> Técnico em Desenvolvimento de Sistemas
+            </p>
+            <a href="#page2"> <b>SAIBA MAIS</b></a>
+        </div>
+    
+    </section>
+    <section id="page2"></section>
+    <section id="page3"></section>
+</body>
+</html>
 
