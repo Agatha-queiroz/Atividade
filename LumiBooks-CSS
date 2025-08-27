@@ -1,0 +1,212 @@
+*{
+    margin: 0%;}
+
+img{
+        background-size: cover;
+        width: 100%;
+        max-height: 100vh;
+        position: absolute;
+        z-index: 1;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+   
+}
+#box{
+    background-color: rgba(232, 222, 205, 0.6);
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+    top: 0;
+    z-index: 2;
+
+}
+#coisa{
+    top: 35%;
+    left: 37%;
+    position: absolute;
+    z-index: 3;
+    
+}
+
+
+   /* From Uiverse.io by bociKond */ 
+.form {
+  --bg-light: #dbba95 ;
+  --bg-dark: #7e4f18;
+  --clr: #512b13;
+  --clr-alpha: #e8decd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form .input-span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--clr-alpha);
+  outline: 2px solid var(--bg-dark);
+}
+
+.form input[type="email"]:focus,
+.form input[type="password"]:focus {
+  outline: 2px solid var(--clr);
+}
+
+.label {
+  align-self: flex-start;
+  color: var(--clr);
+  font-weight: 600;
+}
+
+.form .submit {
+  padding: 1rem 0.75rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 3rem;
+  background-color: var(--bg-dark);
+  color: var(--bg-light);
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "playfair display";
+  letter-spacing: 2px;
+
+}
+
+.form .submit:hover {
+  background-color: var(--clr);
+  color: var(--bg-light);
+}
+
+.span {
+  text-decoration: none;
+  color: var(--bg-dark);
+}
+
+.span a {
+  color: var(--clr);
+  align-self: flex-start;
+ 
+ 
+}
+
+.login{
+  position: absolute;
+  top: 17%;
+  left: 40%;
+  z-index: 10;
+  color: #512b13;
+  letter-spacing: 3px;
+  font-size: 20px;
+    
+}
+
+.subtitulo{
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  z-index: 10;
+  color: #512b13;
+  letter-spacing: 3px;
+  font-size: 20px;
+  width: 600px;
+
+}
+
+.button {
+  display: block;
+  position: relative;
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  overflow: hidden;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  z-index: 50;
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 7px;
+}
+
+.button:before {
+  border: 4px solid #512b13;
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button:after {
+  border: 4px solid #bb9263;
+  transform: scale(1.3);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
+
+.button:hover:before,
+.button:focus:before {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.button:hover:after,
+.button:focus:after {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button-box {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.button-elem {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 17px 18px 0 18px;
+  transform: rotate(180deg);
+  fill: #9c6628;
+}
+
+.button:hover .button-box,
+.button:focus .button-box {
+  transition: 0.4s;
+  transform: translateX(-56px);
+}
