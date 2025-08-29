@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <select name="" id="">
+            <option  value="1">Um</option> <!-- O "1" é o valor que será enviado/ o "Um" é o valor que aparece para o usuário-->
+            <option  value="2">Dois</option>
+            <option  value="outro" selected >Outro</option> <!-- "Selected" é para deixar a opção já marcada-->
+        </select>
+
+        <label for="Nome"> Nome </label> <!-- O "Label" direciona para o campo que ele está fazendo referêcia-->
+        <input id= "Nome" type="text" autofocus> 
+        Sobrenome <input id= "Nome" type="texto" autofocus> 
+
+    </form>
+</body>
+</html>
