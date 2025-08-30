@@ -1,0 +1,103 @@
+
+    align-content: center;
+
+}
+.logo>img{
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+}
+.logo>#lumi{
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    font-size: 55px;
+    font-weight: bold;
+    color: #e6b345;
+    z-index: 3;
+}
+.logo>form{
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    font-size: 55px;
+    font-weight: bold;
+    color: #e6b345;
+    z-index: 4;
+}
+/*/////////LOGIN/////////*/
+#login{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-decoration: none;
+    color: #e6b345;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*///////////////////// MENU //////////////////////*/
+.menu{
+   position: absolute;
+   top: 9vh;
+    width: 100%;
+    height: 6vh;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #e8decd;
+    justify-content: space-around;
+}
+.menu>a{ 
+    text-decoration: none;
+    color: #7e4f18;
+    font-size: 25px;
+    font-weight: bold;
+}
+a:hover{
+ width: 150px;
+  height: 7vh;
+  color: #bd8305;;
+  background: #e8decdaa;
+  transition: width 3.5s;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  scrollbar-shadow-color: aquamarine;
+  border: 1px solid #7e4f18;
+}
+
+/*/////barra de pesq./////*/ 
+.container-input {
+  position: relative;
+  left: 80  vh;
+    top: 5vh;
+    z-index: 5;
+}
+
+.input {
+  width: 250px;
+  padding: 10px 0px 10px 40px;
+  border-radius: 9999px;
+  border: solid 1px #551e1e;
+  transition: all .2s ease-in-out;
+  outline: none;
+  opacity: 0.9;
+  border-radius: 13px;
+}
+
+.container-input svg {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translate(0, -50%);
+}
+
+.input:focus {
+  opacity: 1;
+  width: 550px;
+  background: #f2f2f2;
+  border: 1px solid #ba6e05;
+  border-radius: 10px;
+}
