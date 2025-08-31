@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="QuemSomos">
+    <img src="22c1f396-e810-49f0-b8db-4287bbb497c2.png">
+  </div>
+
+  <div class="texto"><i>A LumiBooks nasceu do desejo de levar  a <br>leitura de forma acessível para a <br> 
+    sociedade. Nosso compromisso é criar um ambiente<br> inspirador e acolhedor, mudando o mercado<br> 
+    na literatura no Brasil.</i></div>
+  
+  <button class="botao"> CONHEÇA A NOSSA HISTÓRIA</button>
+
+  <footer>
+    <div class="rodape">
+      <p>© 2025 LumiBooks. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
+
+----------- PARTE DO CSS -----------
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{margin: 0%;}
+
+img{
+  background-size: cover; /* fundo cobrir tudo*/
+  width: 100%; /* imagem ocupar 100% de largura*/
+  max-height: 100vh; /* limite de altura máxima*/
+  position: absolute;
+  z-index: 1; /*mover a imagem para frente*/
+  object-fit: cover;/*ajuda a imagem manter a proporção*/
+  object-position: 50% 65%; /*parte da imagem que quer mostrar mais*/
+  opacity: 0.9; /* torna a imagem mais transparente, quanto mais próximo do 0, mais invisivel*/
+}
+ .texto{
+    font-family: "Playfair Display";
+    z-index: 2;
+    color: #ffffff;
+    position: absolute;
+    top:53%;
+    left:37%;
+    text-align: center;
+ }
+
+ .botao{
+    background-color:#7E4F18;   /* cor de fundo*/
+    color: #C89B3C;  /* cor do texto */
+    border: 1px solid black;  
+    border-radius: 20px;/* arredonda os cantos*/
+    padding: 8px 30px;  /* "8" é espaço em cima e em baixo/ "28" é o espaço na direita e esquerda */
+    font-size: 11px; /* tamanho da fonte*/
+    font-family: "Playfair Display"; /* nossa fonte */
+    cursor: pointer; /* muda o curso do mouse para uma setinha*/
+    z-index: 4; /* trazer o botão para frente*/
+    position: absolute;
+    top:74%;
+    left: 40%; /* distância da esquerda*/
+    letter-spacing: 2px; /* espaço entre as palavras*/ 
+  }
+
+  .botao:hover { /* Efeito ao passar o mouse */
+    background-color: #C89B3C; /* muda para dourado mais claro */
+    color: #000; /* texto preto */
+  }
+
+  footer{ /*rodape*/
+    background-color: #7E4F18;
+    color:#C89B3c;
+    height: auto;
+    width: 100%; /*largura*/
+    font-size: 14px;
+    font-family: "Playfair Display";
+    z-index: 3;
+    position:fixed ;
+    left: 0;
+    top: 96%;
+}
+ .rodape{ /*informações do rodape*/
+    width: 100% ;
+    background-color:  #7E4F18;
+    padding: 4px; /*cria espaço dentro do rodape*/
+    margin: 0px;
+    text-align: center;
+    z-index: 4;
+}
+  
+ 
