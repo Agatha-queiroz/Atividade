@@ -1,0 +1,57 @@
+-------- PARTE HTML --------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <link rel="stylesheet" href="stlye2.css">
+</head>
+<body>
+    <section id="pagina1">
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    </section>
+</body>
+</html>
+
+--------- PARTE CSS -----------
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+#pagina1{
+    display: grid;
+    grid-template-columns: [colun1]1fr[colun2]2fr[colun3]1fr; /*fr é uma fração, a coluna do meio tem o dobro da fração em relação as outras*/
+    grid-template-rows: [linha1]20% [linha2]60% [linha3]20%;
+}
+
+#box1{
+    background-color: rgb(82, 44, 16);
+    width: 100px;
+    height: 100px;
+    grid-column: colun2; /*mudar de coluna*/
+    grid-row: 2; /*muda a linha do elemento*/
+    left: 40%;
+    top: 40%;
+    position: relative;
+}
+
+#box2{
+    background-color: rgb(119, 73, 25);
+    width: 100px;
+    height: 100px;
+}
+
+#box3{
+    background-color: rgb(174, 112, 58);
+    width: 100px;
+    height: 100px;
+    grid-row: linha3;
+    grid-column: 3;
+    left: 80%;
+}
