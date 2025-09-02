@@ -4,27 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LumiBooks</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_lumibooks.css">
+    <link rel="stylesheet" href="style_pg_planos.css">
 </head>
 <body>
     <section>
-        <iframe src="cabecalho.html" style="width:100%; height: max-content; border:none;"></iframe>
+        <header>
+            <div class="cabecalho">
+                <a href="pg_inicial.html" class="logo">
+                    <img src="lua-crescente.png" alt="Logo LumiBooks"> <!--substituir pela logo oficial-->
+                    <h1 id="lumi">LumiBooks</h1> 
+                </a>
+                    <div class="container-input">
+                        <form action="" method="get">
+                            <input type="text" placeholder="PESQUISAR" name="text" class="pesquisa">
+                            <input type="submit" value="" class="bt-pesquisa">
+                                <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+                                </svg>
+                        </form>
+                </div>
+                <div id="login"><a href="LumiBooks-HTML-LOGIN.html">Login</a></div>
+            </div>
+        </header>
+           <nav class="menu">   
+                <a href="pg_inicial.html" target="_self">Início</a> 
+                <a href="pg_everse.html" target="_self">E-Verse</a>
+                <a href="pg_comunidade.html" target="_self">Comuidade</a>
+                <a href="pg_planos.html" target="_self">Planos</a>
+                <a href="pg_noticias.html" target="_self">Notícias</a>
+                <a href="pg_sobre.html" target="_self">Sobre Nós</a>
+                <a href="pg_contato.html" target="_self">Contato</a>
+               
+            </nav>
             <div class="planos">
                 <div id="titulo">
-                    <p><h1>Nossos Planos</h1></p><br>
-                    <p>Escolha o plano que melhor se adapta às suas necessidades e aproveite ao máximo a leitura!</p><br>
+                    <p>Escolha o plano que melhor se adapta às suas necessidades <br>e aproveite ao máximo a leitura!</p><br>
                 </div>
-                <div id="plano">
+                <div class="plano">
                     <h2>Plano Padrão</h2>
-                    <p>Acesso a uma ampla seleção de livros e recursos adicionais.</p>
-                    <p>Preço: R$ 19,90/mês</p>
-                    <button>Assinar</button>
+                    <p> ‣Acesso a uma lista especial de livros gratuitos no E-Verse;<br>
+                        ‣Frete grátis em livros pré-selecionados;<br>
+                        ‣Receba 1 livro por mês especialmente selecionado para você.<br>
+                    </p>
+                    <p> R$ 49,90/mês </p>
+                    <button>Assine agora</button>
                 </div>
-                <div id="plano">
+                <div class="plano">
                     <h2>Plano Premium </h2>
-                    <p>Acesso ilimitado a todos os livros, recursos exclusivos e suporte prioritário.</p>
-                    <p>Preço: R$ 29,90/mês</p>
-                    <button>Assinar</button>
+                    <p>
+                       ‣Acesso ilimitado ao catálogo de livros gratuitos;<br>
+                       ‣Acesso antecipado a novos lançamentos;<br>
+                       ‣Descontos exclusivos em todo o site;<br>
+                       ‣Frete grátis em todos os pedidos;<br>
+                       ‣Receba 2 livros a cada dois meses no conforto da sua casa.<br>                    
+                       </p>
+                    <p>R$ 478,00/ano<br></p>
+                       <p style="font-weight: lighter;">(R$ 39,90/mês)</p>
+                    <button>Assine agora</button>
                 </div>
             </div>
             <div class="rodape">
