@@ -3,6 +3,25 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Tinos', 'Playfair Display';
+   
+}
+/*section{
+    background-size: cover; 
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff ;
+    background-size: cover;
+    background-position: center;
+    position: relative;*/
+ 
+iframe {
+  width: 100%;
+  height: calc(100vh - 13vh); /* ocupa o resto da tela */
+  position: absolute;
+  top: 13vh; /* começa depois do header + menu */
+  left: 0;
+  border: none;
+  z-index: 1; /* fica atrás do header e do menu */
 }
 
 /*////////////////////CABEÇALHO/////////////////////*/
@@ -10,7 +29,7 @@ header {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  height: 9vh;
+  height: 6vh;
   background-image: linear-gradient(to right, #391300, #966c2ef9, #391300);
   position: fixed;
   top: 0;
@@ -20,10 +39,11 @@ header {
 }
 .cabecalho {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr auto 1fr; /* esquerda, centro, direita */
   align-items: center;
   width: 100%;
 }
+
 
 /*////////////LOGO//////////////*/
 .logo {
@@ -31,15 +51,19 @@ header {
   align-items: center;
   gap: 10px;
   justify-self: start;
+  text-decoration: none;
 }
+
 .logo > img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
+
 .logo > #lumi {
-  font-size: 32px; 
+  font-size: 43px;
   font-weight: bold;
   color: #e6b345;
+  text-decoration: none;
 }
 
 /*/////barra de pesq./////*/ 
@@ -48,7 +72,7 @@ header {
   justify-self: center;
 }
 
-.input {
+.pesquisa {
   width: 250px;
   padding: 10px 40px 10px 10px;
   border: solid 1px #551e1e;
@@ -67,13 +91,25 @@ header {
   pointer-events: none; 
 }
 
-.input:focus {
+.pesquisa:focus {
   opacity: 1;
   width: 450px;
-  background: #f2f2f2;
+  background: #fdf8e3;
   border: 1px solid #ba6e05;
   border-radius: 10px;
 }
+.bt-pesquisa {
+  position: absolute;
+    top: 1px;
+    right: 0px;
+    width: 38px;
+    height: 40px;
+    border: solid 1px #00000080;
+    background: #e6b34585;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
 
 /*/////////LOGIN/////////*/
 #login {
@@ -83,19 +119,18 @@ header {
   font-weight: bold;
    justify-self: end;
 }
-
-
 /*///////////////////// MENU //////////////////////*/
 .menu{
-   position: absolute;
-   top: 9vh;
+   position: fixed;
+   top: 6vh;
     width: 100%;
-    height: 6vh;
+    height: 5vh;
     padding: 5px;
     display: flex;
     align-items: center;
     background-color: #e8decd;
     justify-content: space-around;
+    animation: 3s ease-in-out;
 }
 .menu>a{ 
     text-decoration: none;
@@ -113,5 +148,94 @@ header {
   align-items: center;
   justify-content: space-around;;
   border: 1px solid #7e4f18;
+  z-index: 10;
+}
+.menu>a:active{
+  background: #523503;
+  color: white;
+  font-size: 28px;
+  transition: all 0.3s;
+}
+/* From Uiverse.io by KlaujonRuamni */ 
+button {
+  width: auto;
+  height: 60px;
+  border: 3px solid #ecac3d;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: #cda35b;
+  font-size: 1.2em;
+  font-weight: 550;
+  padding: 1px 15px;
+}
+
+button:hover {
+  background: #523503;
+  color: white;
+  font-size: 1.5em;
+}
+
+/*///////////////////// RODAPÉ //////////////////////*/
+.rodape {
+  position: absolute;
+  bottom: 0vh;
+  width: 100%;
+  height: 3vh;
+  background-image: linear-gradient(to right, #391300, #442c08f9, #391300);
+  color: #e6b345;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*///////////////////// PG_PLANOS //////////////////////*/
+section{
+    background-image: url(lumi.png);
+    background-size: cover; 
+    width: 100%;
+    height: 100vh;
+     background-size: cover;
+    background-position: center;
+    position: fixed;
+}
+#titulo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vh;
+    color: #f7f1e7;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.planos{
+  position: relative;
+  top: 20vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 30px;               
+  flex-wrap: wrap;         
+  padding: 20px;
+  
+
+}
+.plano{
+  height: 450px;
+    top: 20px;
+    background-color: #e8decde3;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+    margin: 35px;
+    flex-wrap: nowrap;
+    color: #372a28;
+    font-family: 'playfair display', serif;
     
 }
