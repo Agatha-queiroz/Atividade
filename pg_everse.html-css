@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <title>LumiBooks-EVerse</title>
+  <link rel="stylesheet" href="style_lumibooks.css">
+    <link rel="stylesheet" href="style_pg_everse.css">
  
 <body>
-  <div id="e-verse">
-    <img src="4610a1f1-03f0-4890-be1a-de5c7fc20266.png">
+  <section id="e-verse">
+  <div class="titulo">
+     <h1 id="titulo_everse">E-VERSE SUA LEITURA,<br> SEU UNIVERSO</h1>
   </div>
-  <div class="titulo"> <h1>E-VERSE SUA LEITURA,<br> SEU UNIVERSO</h1></div>
-  <div class="texto"><i>Descubra o E-Verse, o nosso aparelho de leitura que irá transformar a sua <br>
-  experiência literária. Com tecnologia avançada e moderna, o E-Verse <br> oferece uma tela com brilho ajustável, 
-  bateria que pode durar até duas <br> semanas e com cores nas imagens, assim como no livro físico.</i></div>
+  <div class="texto">
+  <i>Descubra o E-Verse, o nosso aparelho de leitura que irá transformar a sua <br>
+  experiência literária. Com tecnologia avançada e moderna, o E-Verse <br>
+   oferece uma tela com brilho ajustável, 
+  bateria que pode durar até duas <br> 
+  semanas e com cores nas imagens, assim como no livro físico.</i></div>
   
   <button class="botao"> COMPRE AGORA</button>
   
@@ -22,26 +26,19 @@
       <p>© 2025 LumiBooks. Todos os direitos reservados.</p>
     </div>
   </footer>
-  
+  </section>
 </body>
 
 </html>
-
 ------------- PARTE DO CSS -------------
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-*{margin: 0%;}
-
-img{ /* imagem de fundo*/
-  background-size: cover;
-  width: 100%;
-  max-height: 100vh;
-  position: absolute;
-  z-index: 1;
+section{
+  background-image: url("4610a1f1-03f0-4890-be1a-de5c7fc20266.png");/* imagem de fundo*/
+    background-size: cover; 
+    background-position: center;
+    position: fixed;
 }
 
- h1{ /*parte do título*/
+ #titulo_everse{ /*parte do título*/
     position: absolute;
     top: 28%;
     left: 5%;
@@ -69,7 +66,7 @@ img{ /* imagem de fundo*/
     border: 1px solid black;
     border-radius: 20px;/* arredonda os cantos*/
     padding: 8px 28px;  /* "8" é espaço em cima e em baixo/ "28" é o espaço na direita e esquerda */
-    font-size: 10px; /* tamanho da fonte*/
+    font-size: 20px; /* tamanho da fonte*/
     font-family: "Playfair Display"; /* nossa fonte */
     cursor: pointer; /* muda o curso do mouse para uma setinha*/
     z-index: 2; /* trazer o botão para frente*/
@@ -84,26 +81,3 @@ img{ /* imagem de fundo*/
   .botao:hover {
     background-color: #C89B3C;  /* muda para dourado mais claro */
     color: #000; /* texto preto */
-  }
-  
-
-footer{ /* o rodape */
-    background-color: #7E4F18;
-    color:#C89B3c;
-    height: auto;
-    width: 100%;
-    font-size: 14px;
-    font-family: "Playfair Display";
-    z-index: 3;
-    position:fixed ;
-    left: 0;
-    top: 96%;
-}
- .rodape{ /* informações que ficam dentro do rodape*/
-    width: 100% ;
-    background-color:  #7E4F18;
-    padding: 4px;
-    margin: 0px;
-    text-align: center;
-    z-index: 4;
-}
