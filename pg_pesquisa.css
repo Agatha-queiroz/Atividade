@@ -90,8 +90,8 @@ section{
     grid-row: 5/6;
   }
 
-  #fundo{
-    background-color: #7e4e18c8;
-    grid-column: 1 2 3;
-    grid-row: 3/6;
-  }
+ #sombra{
+  background-color: #7e4e1882;
+  grid-column: 1/4;
+  grid-row: 3/7;
+}
