@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style_inicial.css">
+  <link rel="stylesheet" href="style_cabecalho.css">
 </head>
 <body>
-   <iframe src="cabecalho.html" style="width:100%; height:500px; border:none;"></iframe>
-<H1>INICIAL</H1>   
+  
+  <section class="1">
+    <div class="pagina-conteudo">
+      <h1 id="txt1">APROVEITE PARA CONHECER OS NOSSOS PLANOS DE LEITURA!</h1>
+      <h1 id="txt2">Sua próxima leitura com 10% OFF</h1>
+      <button class="btn-planos" onclick="window.location.href='pg_planos.html'">CONHEÇA NOSSOS PLANOS</button>
+          <img src="img_pglivros.png" alt="Imagem de livros" id="img-livros">
+          <Img src="img_pglivros(2).png" alt="Imagem de livros" id="img-livros2">
+    </div>
+    <div id="blc1">   </div><div id="blc2"></div>   <div id="blc3"></div>
+    <!-- Chat box -->
+      <div class="cardcontainer" id="cardcontainer"><!-- From Uiverse.io by ahmed150up --> 
+        <div class="card-header">
+          <div class="img-avatar"></div>
+          <div class="text-chat">Chat</div>
+            <button class="buttonclose" id="buttonclose"><img src="icons-x.png" alt="X"></button>
+          </div>
+          <div class="card-body">
+            <div class="messages-container">
+             <div class="message-box">
+              <p>Olá, tem alguma dúvida? Envie suas perguntas aqui</p>
+            </div>
+            </div>
+            <div class="message-input">
+              <form>
+                <textarea placeholder="Digite aqui..." class="message-send" id="msg"></textarea>
+                <button type="submit" class="button-send">ENVIAR ></button>
+              </form>
+            </div>
+          </div>
+      </div>
+    <button id="btnopen" class="btnopen"><img src="ai-technology.png" alt="chat"></button>
+
+    <div class="rodape">
+      <p>&copy; 2025 LumiBooks. Todos os direitos reservados.</p>
+    </div>
+  </section>
+
+  <script>
+  const cardcontainer = document.getElementById('cardcontainer');
+  const buttonclose = document.getElementById('buttonclose');
+  const btnopen = document.getElementById('btnopen');
+
+  buttonclose.addEventListener('click', () => {
+    cardcontainer.style.display = 'none';   // esconde o card
+    btnopen.style.display = 'block';        // mostra o botão
+  });
+
+  btnopen.addEventListener('click', () => {
+    cardcontainer.style.display = 'flex';   // mostra o card de volta
+    btnopen.style.display = 'none';         // esconde o botão
+  });
+</script>
 
 </body>
 </html>

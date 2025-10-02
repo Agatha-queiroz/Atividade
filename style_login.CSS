@@ -12,12 +12,11 @@ img{
         z-index: 1;
 }
 
-section{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-   
+section {
+  width: 100%;
+  height: 100vh;
 }
+
 #box{
     background-color: rgba(232, 222, 205, 0.6);
     width: 100%;
@@ -27,14 +26,22 @@ section{
     z-index: 2;
 
 }
-#coisa{
-    top: 35%;
-    left: 50%;
-    position: absolute;
-    z-index: 3;
-  translate: -50%;
-}
 
+#coisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 550px;
+  }
 
    /* From Uiverse.io by bociKond */ 
 .form {
@@ -49,14 +56,14 @@ section{
   width: 100%;
   max-width: 300px;
 }
-
 .form .input-span {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin: 10px;
+  align-items: center;
 }
-
 .form input[type="email"],
 .form input[type="password"] {
   border-radius: 0.5rem;
@@ -69,18 +76,15 @@ section{
   background-color: var(--clr-alpha);
   outline: 2px solid var(--bg-dark);
 }
-
 .form input[type="email"]:focus,
 .form input[type="password"]:focus {
   outline: 2px solid var(--clr);
 }
-
 .label {
   align-self: flex-start;
   color: var(--clr);
   font-weight: 600;
 }
-
 .form .submit {
   padding: 1rem 0.75rem;
   width: 100%;
@@ -97,9 +101,7 @@ section{
   font-size: 18px;
   font-family: "playfair display";
   letter-spacing: 2px;
-
 }
-
 .form .submit:hover {
   background-color: var(--clr);
   color: var(--bg-light);
@@ -109,35 +111,31 @@ section{
   text-decoration: none;
   color: var(--bg-dark);
 }
-
 .span a {
   color: var(--clr);
   align-self: flex-start;
- 
- 
 }
 
 .login{
-  position: absolute;
-  top: 17%;
-  left: 40%;
+  position: relative;
+  margin: 5px 5px 15px;
   z-index: 10;
   color: #512b13;
   letter-spacing: 3px;
   font-size: 20px;
-    
+  width: 309px;
+  text-align: center;
 }
 
 .subtitulo{
-  position: absolute;
-  top: 25%;
-  left: 30%;
+  position: relative;
+  margin: 6px 15px 6px 15px; 
   z-index: 10;
   color: #512b13;
   letter-spacing: 3px;
   font-size: 20px;
   width: 600px;
-
+text-align: center;
 }
 
 .button {
@@ -153,7 +151,6 @@ section{
   border: 0;
   z-index: 50;
 }
-
 .button:before,
 .button:after {
   content: "";
@@ -161,13 +158,11 @@ section{
   border-radius: 50%;
   inset: 7px;
 }
-
 .button:before {
   border: 4px solid #512b13;
   transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
     transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
 }
-
 .button:after {
   border: 4px solid #bb9263;
   transform: scale(1.3);
@@ -175,7 +170,6 @@ section{
     transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   opacity: 0;
 }
-
 .button:hover:before,
 .button:focus:before {
   opacity: 0;
@@ -183,7 +177,6 @@ section{
   transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
     transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-
 .button:hover:after,
 .button:focus:after {
   opacity: 1;
@@ -191,14 +184,19 @@ section{
   transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
     transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
 }
-
 .button-box {
   display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   position: absolute;
-  top: 0;
-  left: 0;
-}
-
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  align-content: center;
+  flex-wrap: nowrap;
+  }
 .button-elem {
   display: block;
   width: 20px;
@@ -207,7 +205,6 @@ section{
   transform: rotate(180deg);
   fill: #9c6628;
 }
-
 .button:hover .button-box,
 .button:focus .button-box {
   transition: 0.4s;

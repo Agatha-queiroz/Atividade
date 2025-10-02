@@ -1,0 +1,70 @@
+/*///////////////////// PG_PLANOS //////////////////////*/
+section{
+    background-image: url(lumi.png);
+    background-size: cover; 
+    background-position: center;
+    position: fixed;
+}
+#titulo_plano{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160vh;
+    color: #f7f1e7;
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px;
+    font-family: 'playfair display';
+}
+.planos{
+  position: relative;
+  top: 13vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 30px;               
+  flex-wrap: wrap;         
+  padding: 20px;
+}
+.plano_plano{
+  height: 450px;
+    top: 20px;
+    background-color: #e8decde3;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+    margin: 35px;
+    flex-wrap: nowrap;
+    color: #372a28;
+    font-family: 'playfair display', serif;   
+}
+.plano_plano>h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+    color: #4e332f;
+}
+.preco_plano{
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    font-family: 'playfair display';
+}
+.texto_planos{
+  font-size: 18px;
+.texto_planos{
+  font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    font-weight: 500;
+    margin: 10px 10px;
+    padding: 5px 10px;
+    font-family: 'Tinos', serif;
+}

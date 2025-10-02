@@ -1,0 +1,210 @@
+/*///////////////style inicial/////////////////////*/
+#txt1 {
+  top: 80px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+#txt2 {
+  top: 120px;
+  font-size: 45px;
+}
+.btn-planos {
+  position: relative;
+  top: 190px;
+  font-size: 20px;
+}
+#blc1, #blc2, #blc3 {
+  position: absolute;
+  top: 74vh;
+  width: 33px;
+  height: 10px;
+  z-index: 25;
+  border-radius: 45px;
+  border: solid 1px #fffbfb6c;
+}
+#blc1 {
+  left: 45%;
+  background-color: #e6b345;
+}
+#blc2 {
+  left: 49%;
+  background-color: #7e4e18e0;
+}
+#blc3 {
+  left: 53%;
+  background-color: #7e4e18e0
+}
+
+.btn-planos:hover {
+  font-size: 23px;
+  transition: all 0.3s;
+}
+
+/*///////grid de pagina///////*/
+.pagina-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+#img-livros {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  width: 100%;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+  top: 0px;
+}
+#img-livros2 {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  width: 100%;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+  top: 0px;
+}
+.btn-planos {
+  grid-column: 1 / 3;
+  grid-row: 1 / 1;
+}
+h1 {
+  position: relative;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  font-weight: 2.5em;
+  color: #ffffff;
+  z-index: 10;
+  font-family: playfair display, serif;
+}
+
+/*////////////////cards de chat/////////////////////* From Uiverse.io by ahmed150up */ 
+.cardcontainer {
+position: fixed;
+    right: 25px;
+    bottom: 30px;
+    background-color: #f7f1e7;
+    border-radius: 10px;
+    border: 2px solid #c89b3c;
+    margin: 15px;
+    width: 250px;
+    height: 298px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+    z-index: 20;
+}
+
+/*//////cabeçalho do card//////*/
+.card-header {
+display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+    background-color: #c89b3c;
+}
+.card-header .img-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: #333;
+}
+.card-header .text-chat {
+  color: black;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+/*//////corpo do card//////*/
+.card-body {
+  flex: 1;
+  overflow-y: auto;
+}
+/*//////mensagens//////*/
+.messages-container {
+  padding: 15px;
+}
+.message-box {
+  height: 48px;
+  width: 200px;
+  padding: 5px;
+  margin: 10px 5px 6px 0 ;
+  border-radius: 0 15px 15px 10px;
+  background-color: #c89c3c95;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+}
+.message-input {
+ position: relative;
+    top: 20%;
+  padding: 5px;
+  border-top: 1px solid #ccc;
+  background-color: #ede9e3a7;
+  border-radius: 0px 0px 10px 10px;
+}
+.message-input .message-send {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+}
+/*//////  //////*/
+.message-input .button-send {
+  position: relative;
+  background-color: #ffffff;
+  color: #131100;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 9px;
+  right: 5px;
+  height: 30px;
+  width: 56px;
+}
+.message-input .button-send:hover {
+  background-color: #57493f;
+  color: #e5d5b4;
+}
+
+.buttonclose {
+  position: absolute;
+  margin: 5px;
+  top: 5px;
+  right: 5px;
+  height: 10px;
+  width: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.btnopen {
+  display: none; /* começa escondido */
+  position: fixed;
+  bottom: 35px;
+  right: 25px;
+  color: white;
+  border: none;
+  border-radius: 40%;
+  width: 55px;
+  height: 50px;
+  cursor: pointer;
+}
+.btnopen img {
+  width: 40px;
+  height: auto;
+  right: 6px;
+  position: relative;
+}

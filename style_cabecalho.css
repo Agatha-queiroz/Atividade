@@ -6,20 +6,38 @@
     font-family: 'Tinos', 'Playfair Display';
    
 }
+body {
+    background-color: #e8decd;
+}
+body::-webkit-scrollbar {
+  width: 10px;               /* largura do scrollbar */
+ }
+
+body::-webkit-scrollbar-track {
+  background:#391300;     /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e7c889;    /* cor da barra do scroll */
+  width: 10px;
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1.5px solid rgba(91, 61, 5, 0.49);  /* creates padding around scroll thumb */
+}
+
 section{
     background-size: cover; 
     width: 100%;
     height: 100vh;
-    background-color: #ffffff ;
+    background-color: #e8decd ;
     background-size: cover;
     background-position: center;
     position: relative;}
  
 iframe {
   width: 100%;
-  height: calc(100vh - 11vh); /* ocupa o resto da tela */
+  height: calc(100vh - 10.5vh); /* ocupa o resto da tela */
   position: absolute;
-  top: 11vh; /* começa depois do header + menu */
+  top: 10.4vh; /* começa depois do header + menu */
   left: 0;
   border: none;
   z-index: 1; /* fica atrás do header e do menu */
@@ -29,9 +47,8 @@ iframe {
 header {
   display: flex;
   align-items: center;
-  padding: 0 20px;
   height: 6vh;
-  background-image: linear-gradient(to right, #391300, #966c2ef9, #391300);
+  background-image: linear-gradient(to right, #391300, #966c2e, #391300);
   position: fixed;
   top: 0;
   width: 100%;
@@ -40,14 +57,22 @@ header {
 }
 .cabecalho {
   display: grid;
-  grid-template-columns: 1fr auto 1fr; /* esquerda, centro, direita */
+  grid-template-columns: 1fr 2fr 1fr; /* esquerda, centro, direita */
+  grid-template-areas: "logo pesquisa icons";
   align-items: center;
   width: 100%;
+   padding: 0 20px;
 }
-
-
+.icons{
+  grid-area: icons;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: end;
+}
 /*////////////LOGO//////////////*/
 .logo {
+  grid-area: logo;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -56,8 +81,8 @@ header {
 }
 
 .logo > img {
-  width: 40px;
-  height: 40px;
+  width: auto;
+  height: 37px;
 }
 
 .logo > #lumi {
@@ -70,12 +95,14 @@ header {
 
 /*/////barra de pesq./////*/ 
 .container-input {
+  grid-area: pesquisa;
   position: relative;
   justify-self: center;
 }
 
 .pesquisa {
-  width: 250px;
+  width: 300px;
+  height: 38px;  
   padding: 10px 40px 10px 10px;
   border: solid 1px #551e1e;
   border-radius: 13px;
@@ -85,40 +112,49 @@ header {
   opacity: 0.8;
 }
 
-.container-input svg {
+.container-input img {
   position: absolute;
+  width: 25px;
+  height: auto;
   top: 50%;
-  right: 10px;
+  right: 7px;
   transform: translateY(-50%);
   pointer-events: none; 
 }
 
 .pesquisa:focus {
   opacity: 1;
-  width: 450px;
+  width: 550px;
   background: #fdf8e3;
   border: 1px solid #ba6e05;
   border-radius: 10px;
 }
 .bt-pesquisa {
   position: absolute;
-    top: 1px;
+    top: 0px;
     right: 0px;
     width: 38px;
-    height: 40px;
+    height: 38px;
     border: solid 1px #00000080;
     background: #e6b34585;
-    border-radius: 9px;
+    border-radius: 1px 13px 13px 1px;
     cursor: pointer;
-
   }
-
-
+.pesquisa:focus + .bt-pesquisa {
+  background-color: #e6b345;
+  border-radius: 1px 10px 10px 1px;
+}
 /*/////////LOGIN/////////*/
-#login {
-   width: 40px;
-    height: 40px;
-    border-radius: 50%;
+.actionbutton {
+  grid-area: icons;
+  gap: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+   width: 38px;
+    height: 38px;
+    border-radius: 13px;
     background-color: #bd8305;
     border: solid 2px #cda35b;
     font-weight: 600;
@@ -133,69 +169,81 @@ header {
     flex-direction: column;
 }
 
-.svgIcon {
+.iconbt {
   width: 28px;
   transition-duration: 0.3s;
 }
 
-.svgIcon path, .svgIcon rect {
-  fill: rgb(255, 249, 242);
-}
-
-#login:hover {
-  width: 140px;
+.actionbutton:hover {
+  width: 100px;
   border-radius: 50px;
-  transition-duration: 0.3s;
-  background-color: rgb(181, 160, 255);
+  transition-duration: 0.5s;
   align-items: center;
 }
 
-#login:hover .svgIcon {
-  /* width: 20px; */
-  transition-duration: 0.3s;
-  transform: translateX(-300%);
+.actionbutton:hover #icon-user {
+  position: absolute;
+  left: 15px;
+  transition-duration: 1s;
+  transform: translateX(-30%);
 }
 
-#login::before {
+.actionbutton::before {
   position: absolute;
   bottom: -20px;
+  right: 15px;
   content: "LOGIN";
   color: white;
-  
   font-size: 0px;
 }
 
-#login:hover::before {
+.actionbutton:hover::before {
   font-size: 13px;
   opacity: 1;
   bottom: unset;
   /* transform: translateY(-30px); */
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
+}
+#carrinho::before {
+  position: absolute;
+  bottom: -20px;
+  right: 15px;
+  content: "LOGIN";
+  color: white;
+  font-size: 0px;
 }
 /*///////////////////// MENU //////////////////////*/
 .menu{
-   position: fixed;
-   top: 6vh;
-    width: 100%;
-    height: 5vh;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    background-color: #e8decd;
-    justify-content: space-around;
-    animation: 3s ease-in-out;
+  display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+  position: fixed;
+  justify-content: space-around;
+  align-items: center; 
+  align-content: center;
+  justify-items: center; 
+  top: 6vh;
+  width: 100%;
+  height: 4.5vh;
+  left: 0;
+  padding: 5px;
+  border: 1px solid #7e4f18;
+  background-color: #e8decd;
+  animation: 3s ease-in-out;
+  z-index: 5;
+   
 }
 .menu>a{ 
     text-decoration: none;
     color: #7e4f18;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: lighter;
 }
 .menu>a:hover{
  width: 150px;
-  height: 7vh;
+  height: 5vh;
   color: #bd8305;;
-  background: #e8decdaa;
+  background: #efeae1dc;
   transition: width 3.5s;
   display: flex;
   align-items: center;
@@ -206,8 +254,8 @@ header {
 .menu>a:active{
   background: #523503;
   color: white;
-  font-size: 28px;
-  transition: all 0.3s;
+  font-size: 20px;
+  font-weight: bolder;
 }
 /* From Uiverse.io by KlaujonRuamni */ 
 button {
@@ -233,12 +281,11 @@ button:hover {
 /*///////////////////// RODAPÉ //////////////////////*/
 .rodape {
   position: absolute;
-  bottom: 0vh;
-  width: 100%;
-  height: 3vh;
-  background-image: linear-gradient(to right, #391300, #442c08f9, #391300);
-  color: #e6b345;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    height: 3vh;
+    background-image: linear-gradient(to right, #391300, #442c08f9, #391300);
+    color: #e6b345;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
