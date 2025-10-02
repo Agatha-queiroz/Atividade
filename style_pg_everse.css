@@ -1,0 +1,61 @@
+section{
+  background-image: url("4610a1f1-03f0-4890-be1a-de5c7fc20266.png");/* imagem de fundo*/
+    background-size: cover; 
+    background-position: center;
+    position: fixed;
+}
+
+ #titulo_everse{ /*parte do título*/
+    position: absolute;
+    top: 125px;
+    left: 5%;
+    z-index: 1;
+    color: #C89B3C;
+    letter-spacing: 7px; /*espaçamento entre as letras*/
+    font-size: 44px;
+    font-family: "Tinos";
+    font-weight: 100; /*deixa a letra mais fina*/
+    width: 900px;
+}
+.texto{ /* parte do texto*/
+    position: absolute;
+    top: 250px;
+    left: 5%;
+    z-index: 1;
+    color: rgb(236, 233, 233);
+    font-family: "Tinos";
+    opacity: 0,8;
+    font-size: 26px;
+    width: 900px;
+    line-height: 40px;
+}
+
+.botao { /*o botão*/
+    background-color:#7E4F18;   /* cor de fundo*/
+    color: #C89B3C;  /* cor do texto */
+    border: 1px solid black;
+    border-radius: 20px;/* arredonda os cantos*/
+    padding: 8px 28px;  /* "8" é espaço em cima e em baixo/ "28" é o espaço na direita e esquerda */
+    font-size: 20px; /* tamanho da fonte*/
+    font-family: "Playfair Display"; /* nossa fonte */
+    cursor: pointer; /* muda o curso do mouse para uma setinha*/
+    z-index: 2; /* trazer o botão para frente*/
+    position: absolute;
+    top:450px; /* colocar o botão embaixo do texto*/
+    left: 5%; /* distância da esquerda*/
+    letter-spacing: 2px; /* espaço entre as palavras*/
+    
+  }
+  .cont{
+    position: absolute;
+    left: 5%;
+    z-index: 3;
+    height: 100px;
+    width: 200px;
+  }
+  
+  /* Efeito ao passar o mouse */
+  .botao:hover {
+    background-color: #C89B3C;  /* muda para dourado mais claro */
+    color: #000; /* texto preto */
+  }

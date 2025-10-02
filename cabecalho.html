@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_cabecalho.css">
+    <title>LumiBooks</title>
 </head>
 <body>
      <header>
             <div class="cabecalho">
                 <a href="pg_inicial.html" class="logo">
                     <img src="lua-crescente.png" alt="Logo LumiBooks"> <!--substituir pela logo oficial-->
-                    <h1 id="lumi">LumiBooks</h1> 
+                    <h1 id="lumi">LUMIBOOKS</h1> 
                 </a>
-                    <div class="container-input"><form action="" method="get">
-                            <input type="text" placeholder="Search" name="text" class="input">
+                    <div class="container-input">
+                        <form action="" method="get">
+                            <input type="text" placeholder="PESQUISAR" name="text" class="pesquisa">
+                            <button type="submit" value="" class="bt-pesquisa">
                                 <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
                                 </svg>
                         </form>
                 </div>
-                <div id="login"><a href="pg_login.html">Login</a></div>
-            </div>
+                <a href="LumiBooks-LOGIN.html" id="login">
+                    <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 95 114" class="svgIcon">
+                        <rect fill="black" rx="28.5" height="57" width="57" x="19"></rect>
+                        <path fill="black" d="M0 109.5C0 83.2665 21.2665 62 47.5 62V62C73.7335 62 95 83.2665 95 109.5V114H0V109.5Z" fill-rule="evenodd"></path>
+                    </svg>
+                </a>
         </header>
-           <div class="menu">   
-                <a href="pg_inicial.html">Início</a>
-                <a href="pg_comunidade.html">Comuidade</a>
-                <a href="pg_planos.html">Planos</a>
-                <a href="pg_noticias.html">Notícias</a>
-                <a href="pg_sobre.html">Sobre Nós</a>
-                <a href="pg_contato.html">Contato</a>
-            </div>
+           <nav class="menu">   
+                <a href="pg_inicial.html" target="conteudo">Início</a> 
+                <a href="pg_everse.html" target="conteudo">E-Verse</a>
+                <a href="pg_comunidade.html" target="conteudo">Comuidade</a>
+                <a href="pg_planos.html" target="conteudo">Planos</a>
+                <a href="pg_noticias.html" target="conteudo">Notícias</a>
+                <a href="pg_sobre.html" target="conteudo">Sobre Nós</a>
+                <a href="pg_contato.html" target="conteudo">Contato</a>
+               
+            </nav>
+            <iframe name="conteudo"></iframe><!--o iframe vai subistuir o conteudo pelo target escolhido no nav -->
 </body>
 </html>
