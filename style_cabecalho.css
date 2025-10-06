@@ -227,7 +227,7 @@ header {
   height: 4.5vh;
   left: 0;
   padding: 5px;
-  border: 1px solid #7e4f18;
+  border: 1px solid #7e4e1881;
   background-color: #e8decd;
   animation: 3s ease-in-out;
   z-index: 5;
@@ -282,7 +282,6 @@ button:hover {
 .rodape {
   position: absolute;
     width: 100%;
-    height: 3vh;
     background-image: linear-gradient(to right, #391300, #442c08f9, #391300);
     color: #e6b345;
     display: flex;

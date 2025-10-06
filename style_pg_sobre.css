@@ -1,0 +1,54 @@
+
+img{
+  background-size: cover; /* fundo cobrir tudo*/
+  width: 100%; /* imagem ocupar 100% de largura*/
+  height: 100vh; /* limite de altura máxima*/
+  position: absolute;
+  z-index: 1; /*mover a imagem para frente*/
+  object-fit: cover;/*ajuda a imagem manter a proporção*/
+  object-position: 50% 65%; /*parte da imagem que quer mostrar mais*/
+  opacity: 0.8; /* torna a imagem mais transparente, quanto mais próximo do 0, mais invisivel*/
+}
+
+.titulo{
+    font-family: "Playfair Display";
+    z-index: 2;
+    color: #dbecfa;
+    font-size: 30px;
+
+ }
+ .texto{
+    font-family: "Playfair Display";
+    z-index: 2;
+    color: #ffffff;
+    font-size: 23px;} 
+
+ #bc{   
+   background-color: #4b2d0b5c;
+    border-radius: 15px;
+    padding: 20px;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 50%;
+    top: 33%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: column;
+ }
+
+ .botao{
+  border: 1px solid;
+  font-size: 11px; /* tamanho da fonte*/
+    font-family: "Playfair Display"; /* nossa fonte */
+    z-index: 4; /* trazer o botão para frente*/
+    letter-spacing: 2px; /* espaço entre as palavras*/ 
+  }
+.rodape{
+  z-index: 2;
+}
+ 

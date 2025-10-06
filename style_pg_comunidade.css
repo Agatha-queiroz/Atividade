@@ -1,0 +1,79 @@
+.baner{
+    grid-area: baner;
+    text-align: center;
+    font-family: 'playfair display';
+    color: #e8decd;
+}
+.baner>H1{
+    position: relative;
+    z-index: 2;
+    font-weight: lighter;
+    font-size: 25px;
+    margin-top: -6px;
+}
+#banner{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -8vh;
+    left: 0vh;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+#x {
+  display: grid;
+    grid-template-rows:  1fr 2fr 1fr ;
+    grid-template-columns: 1.5fr 3.5fr 2fr;
+  grid-template-areas: "baner baner baner"
+                    "bar-esq meio bar-dir"
+                    "bar-esq meio bar-dir";
+  align-items: center;
+    justify-items: center;
+  height: 100vh;
+  gap: 0px;
+}
+#bar-esq{
+    grid-area: bar-esq;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #e8decd ;
+    background-size: cover;
+    background-position: center;
+  height: 90vh;
+}
+#meio{
+    grid-area: meio;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #d4bea3 ;
+    background-position: center;
+    position: relative;
+  height: 100%;
+  width: 100%;
+  top: 3px;
+  }
+#bar-dir{
+    grid-area: bar-dir;
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: #e8decd ;
+    background-size: cover;
+    background-position: center;    
+    position: relative;
+  }
+  ul{
+    list-style: none;
+  }
+.resenha{
+  display: flex;
+  grid-row: 1;
+  height: 10%;
+}
+.resenha img{
+  height: 85%;
+  width: auto;
+  left: 0px;
+}
+
+
