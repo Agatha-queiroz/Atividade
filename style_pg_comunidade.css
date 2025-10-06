@@ -52,6 +52,7 @@
   height: 100%;
   width: 100%;
   top: -3px;
+    padding: 15px;
   }
 #bar-dir{
     grid-area: bar-dir;
@@ -79,6 +80,7 @@
     position: relative;
     padding: 15px;
 }
+
 
 
 
