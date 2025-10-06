@@ -4,7 +4,7 @@
 section{
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 11vh 15vh 45vh 29vh; 
+    grid-template-rows: 15vh 45vh 29vh; 
 }
 
 #carrinhodecompras{
@@ -50,7 +50,7 @@ h2{
     gap:20px;
 }
 img{
-    width: 25%;
+    width: auto;
     height: 75%;
     margin-top: 5%;
 }
@@ -160,7 +160,7 @@ img{
 #bbb{
     position: absolute;
     left: 6%;
-    bottom: 10%;
+    bottom: 6%;
     width: 40%;
 
 }
@@ -188,3 +188,4 @@ input{
 }
   
  
+
