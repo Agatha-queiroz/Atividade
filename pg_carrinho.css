@@ -10,7 +10,7 @@ section{
 #carrinhodecompras{
     color:#7E4F18;
     margin-left: 10%;
-    grid-row: 2;
+    grid-row: 1;
     grid-column: 1;
     margin-top: 5%;
     
@@ -35,13 +35,13 @@ h2{
     border-radius: 7px;
     width: 86%;
     height: 80%;
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 1;
     margin-top: 5%;
     margin-left: 10%;
 }
 #produto{
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 1;
     margin-left: 15%;
     margin-top: 2%;
@@ -83,7 +83,7 @@ img{
     align-items: center;
     gap: 10px;
     margin-left: 39% ;
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 1;
    
   }
@@ -124,14 +124,14 @@ img{
     border-radius: 7px;
     width: 86%;
     height: 80%;
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 2;
     margin-top: 7%;
     margin-left: 5%;
    
 }
 #frete{
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 1;
 
 }
@@ -188,4 +188,5 @@ input{
 }
   
  
+
 
