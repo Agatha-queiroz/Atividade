@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* { margin:0}
+
+section{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 11vh 15vh 45vh 29vh; 
+}
+
+#carrinhodecompras{
+    color:#7E4F18;
+    margin-left: 10%;
+    grid-row: 2;
+    grid-column: 1;
+    margin-top: 5%;
+    
+}
+
+h1{
+    font-family: Playfair Display;
+    font-size: 25px;
+    letter-spacing:2px;
+    font-weight: lighter;
+}
+
+h2{
+    font-family: Tinos; 
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 1%;
+}
+
+#fundo{
+    background-color:#ffffff79;
+    border-radius: 7px;
+    width: 86%;
+    height: 80%;
+    grid-row: 3;
+    grid-column: 1;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+#produto{
+    grid-row: 3;
+    grid-column: 1;
+    margin-left: 15%;
+    margin-top: 2%;
+    display: flex;
+    align-items: flex-start;
+    gap:20px;
+}
+img{
+    width: 25%;
+    height: 75%;
+    margin-top: 5%;
+}
+.informacoes{
+    margin-top: 5%;
+}
+.informacoes h1{
+    color: #7E4F18;
+    font-size: 16px;
+    font-family: Playfair Display;
+    font-weight: bold; 
+ 
+}
+
+.informacoes h2{
+    color: #7E4F18;
+    font-size: 13px;
+    font-family: Playfair Display;
+}
+.informacoes h3{
+    color: #7E4F18;
+    font-size: 15px;
+    font-family: Playfair Display;
+    font-weight: bold; 
+    margin-top: 34%;
+}
+/* Container dos botões de quantidade - achei ele */
+.quantidade-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 39% ;
+    grid-row: 3;
+    grid-column: 1;
+   
+  }
+  
+  /* Botões + e - */
+  .btn-quantidade {
+    background-color: #E8DECD;
+    border: 2px solid #7E4F18;
+    color: #7E4F18;
+    font-family: 'Tinos', serif;
+    font-size: 1.2rem;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 35px;
+    height: 35px;
+  }
+  
+  /* Hover dos botões */
+  .btn-quantidade:hover {
+    background-color: #7E4F18;
+    color: white;
+  }
+  
+  /* Número da quantidade */
+  .quantidade {
+    font-family: 'Tinos', serif;
+    font-size: 1.1rem;
+    color: #7E4F18;
+    min-width: 20px;
+    text-align: center;
+  }
+  
+  
+  #fundo2{
+    background-color:#ffffff79;
+    border-radius: 7px;
+    width: 86%;
+    height: 80%;
+    grid-row: 3;
+    grid-column: 2;
+    margin-top: 7%;
+    margin-left: 5%;
+   
+}
+#frete{
+    grid-row: 3;
+    grid-column: 1;
+
+}
+#info2 h1{
+    position: relative;
+    top: -5px;
+     border-bottom: 2.5px #7E4F18 solid;
+     margin-top: 15px;
+     margin-left:15px;
+     padding: 5px;
+     font-size: 20x;
+
+}
+#info2 h3{
+ color: #E8DECD;
+}
+#info2 button{
+    position: relative;
+   top: 50px;
+    left: 35%;
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+}
+
+#bbb{
+    position: absolute;
+    left: 6%;
+    bottom: 10%;
+    width: 40%;
+
+}
+#bbb p{
+     color: #7E4F18;
+    font-size: 20px;
+    font-family: Playfair Display;
+    font-weight: bold; 
+ 
+}
+button{
+     top: 50px;
+    left: 35%;
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+}
+input{
+    border:3px #7E4F18 solid;
+    margin: 10px;
+    margin-left: 0;
+    width: 250px;
+    height: 30px;
+    border-radius: 0%;
+}
+  
+ 
