@@ -66,14 +66,17 @@
     list-style: none;
   }
 .resenha{
-  display: flex;
+
   grid-row: 1;
   height: 10%;
 }
 .resenha img{
-  height: 85%;
-  width: auto;
-  left: 0px;
+    height: 75%;
+    width: auto;
+    left: 30%;
+    top: 5%;
+    position: relative;
+    padding: 15px;
 }
 
 
