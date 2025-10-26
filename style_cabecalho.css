@@ -92,7 +92,22 @@ header {
     text-decoration: none;
     position: relative;
 }
-
+@media (max-width: 570px){
+.logo > #lumi {
+    display: none;
+  } 
+    .logo> img{
+    height: 80%;
+  }
+}  
+@media (max-width:870px){
+  .logo > #lumi {
+    font-size: 30px; 
+  }
+  .logo> img{
+    height: 30px;
+  }
+}
 /*/////barra de pesq./////*/ 
 .container-input {
   grid-area: pesquisa;
@@ -143,6 +158,17 @@ header {
 .pesquisa:focus + .bt-pesquisa {
   background-color: #e6b345;
   border-radius: 1px 10px 10px 1px;
+}
+@media (max-width:700px){
+ .container-input{
+  width: 150px;
+ }
+ .pesquisa{
+  width: 150px;
+ }
+ .pesquisa:focus{
+  width: 250px;
+ }
 }
 /*/////////LOGIN/////////*/
 .actionbutton {
@@ -287,4 +313,5 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
