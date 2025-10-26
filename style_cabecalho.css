@@ -75,7 +75,8 @@ header {
   height: 5vh;
  }
  .icons{
-  width: 35px;
+   width: 90px;
+  height: 35px;
  }
   
 }
@@ -324,4 +325,5 @@ button:hover {
     justify-content: center;
 
 }
+
 
