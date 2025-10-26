@@ -70,6 +70,15 @@ header {
   gap: 10px;
   justify-self: end;
 }
+@media (max-width:570px){
+ header{
+  height: 5vh;
+ }
+ .icons{
+  width: 35px;
+ }
+  
+}
 /*////////////LOGO//////////////*/
 .logo {
   grid-area: logo;
@@ -315,3 +324,4 @@ button:hover {
     justify-content: center;
 
 }
+
