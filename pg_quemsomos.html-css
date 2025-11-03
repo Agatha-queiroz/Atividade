@@ -93,7 +93,7 @@ img{
     z-index: 4;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen (max-width: 480px) {
  
 .texto{
   left: 18%;
@@ -114,7 +114,7 @@ img{
 
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 950px) {
  
   .texto{
     left: 25%;
@@ -127,4 +127,5 @@ img{
 }
 }
  
+
 
