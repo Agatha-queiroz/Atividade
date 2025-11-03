@@ -1,54 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{margin: 0%;}
 
 img{
   background-size: cover; /* fundo cobrir tudo*/
   width: 100%; /* imagem ocupar 100% de largura*/
-  height: 100vh; /* limite de altura máxima*/
+  max-height: 100vh; /* limite de altura máxima*/
   position: absolute;
-  z-index: 1; /*mover a imagem para frente*/
+  z-index: 2; /*mover a imagem para frente*/
   object-fit: cover;/*ajuda a imagem manter a proporção*/
   object-position: 50% 65%; /*parte da imagem que quer mostrar mais*/
-  opacity: 0.8; /* torna a imagem mais transparente, quanto mais próximo do 0, mais invisivel*/
+  opacity: 0.9; /* torna a imagem mais transparente, quanto mais próximo do 0, mais invisivel*/
 }
-
-.titulo{
-    font-family: "Playfair Display";
-    z-index: 2;
-    color: #dbecfa;
-    font-size: 30px;
-
- }
  .texto{
     font-family: "Playfair Display";
     z-index: 2;
     color: #ffffff;
-    font-size: 23px;} 
-
- #bc{   
-   background-color: #4b2d0b5c;
-    border-radius: 15px;
-    padding: 20px;
-    width: 600px;
-    height: 400px;
-    position: relative;
-    left: 50%;
-    top: 33%;
-    transform: translateX(-50%);
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    flex-direction: column;
+    position: absolute;
+    top:53%;
+    left:37%;
+    text-align: center;
  }
 
  .botao{
-  border: 1px solid;
-  font-size: 11px; /* tamanho da fonte*/
+    background-color:#7E4F18;   /* cor de fundo*/
+    color: #C89B3C;  /* cor do texto */
+    border: 1px solid black;  
+    border-radius: 20px;/* arredonda os cantos*/
+    padding: 8px 30px;  /* "8" é espaço em cima e em baixo/ "28" é o espaço na direita e esquerda */
+    font-size: 11px; /* tamanho da fonte*/
     font-family: "Playfair Display"; /* nossa fonte */
+    cursor: pointer; /* muda o curso do mouse para uma setinha*/
     z-index: 4; /* trazer o botão para frente*/
+    position: absolute;
+    top:74%;
+    left: 40%; /* distância da esquerda*/
     letter-spacing: 2px; /* espaço entre as palavras*/ 
   }
-.rodape{
-  z-index: 2;
+
+  .botao:hover { /* Efeito ao passar o mouse */
+    background-color: #C89B3C; /* muda para dourado mais claro */
+    color: #000; /* texto preto */
+  }
+
+  footer{ /*rodape*/
+    background-color: #7E4F18;
+    color:#C89B3c;
+    height: auto;
+    width: 100%; /*largura*/
+    font-size: 14px;
+    font-family: "Playfair Display";
+    z-index: 3;
+    position:fixed ;
+    left: 0;
+    top: 96%;
 }
+ .rodape{ /*informações do rodape*/
+    width: 100% ;
+    background-color:  #7E4F18;
+    padding: 4px; /*cria espaço dentro do rodape*/
+    margin: 0px;
+    text-align: center;
+    z-index: 4;
+    
+}
+
+@media (max-width: 480px) {
  
+.texto{
+  left: 18%;
+  top: 57%;
+  font-size: 10px;
+}
+
+.rodape{
+  font-size: 10px;
+}
+.botao{
+  padding: 5px 4px;
+  font-size: 8px;
+  width: 60%;
+  left: 21%;
+}
+
+
+}
+
+@media  (max-height:481px) and (max-width: 950px) and (min-width:481px) {
+ 
+  .texto{
+    left: 28%;
+    top: 45%;
+    font-size: 18px;
+    color: white;
+  }
+
+.botao{
+  left: 34%;
+}
+
+.rodape{
+  padding: 1px;
+}
+}
