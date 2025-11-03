@@ -57,6 +57,7 @@ section{
     color: #392004c8;
     font-weight: bold;
     font-family: Tinos;
+    
   }
   .filter-bar option{
     background-color: #ffffff;
@@ -94,4 +95,38 @@ section{
   background-color: #7e4e1882;
   grid-column: 1/4;
   grid-row: 3/7;
+  margin-top: 1%;
+}
+
+@media (max-width: 480px) {
+#resultado{
+  font-size: 7px;
+  margin-top: 8%;
+}
+
+ .filter-bar select{
+   height: 27px;
+}
+
+ img{
+    
+    width: 90%;
+  }
+
+
+section{
+  grid-template-columns: 33% 33% 34%;
+  
+}
+
+}
+@media  (max-height:481px) and (max-width: 950px) and (min-width:481px) {
+
+
+  .filter-bar select{
+   height: 27px;
+
+}
+
+
 }
