@@ -8,73 +8,95 @@
     <link rel="stylesheet" href="style_pg_comunidade.css">
 </head>
 <body>
-    <section>
-    <div id="x">
-    <div class="baner">
-        <H1><i>“Comunidade LumiBooks — Um espaço para postar resenhas, trocar ideias e interagir.”</i></H1>
-        <img src="banner.png" alt="banner" id="banner">
-    </div>
-    <div id="bar-esq">
-        <div>
-            <h2>CATEGORIAS</h2>
-            <ul>
-           <li><a href="#" class="bt-esq">Ficção</a></li>
-           <li><a href="#" class="bt-esq">Romance</a></li>
-           <li><a href="#" class="bt-esq">Fantasia</a></li>
-           <li><a href="#" class="bt-esq">Poesia</a></li>
-           <li><a href="#" class="bt-esq">Clássicos</a></li>
-           <li><a href="#" class="bt-esq">Crônica</a></li>
-           <li><a href="#" class="bt-esq">Novela</a></li>
-           <li><a href="#" class="bt-esq">Autoajuda</a></li>
-           <li><a href="#" class="bt-esq">Espiritualidade</a></li>
-            </ul>
+    <section id="comunidade">
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="banner.png" alt="Banner" id="banner">
+    <h1><i>“Comunidade LumiBooks — Um espaço para postar resenhas, trocar ideias e interagir.”</i></h1>
+  </div>
+
+  <div class="layout">
+    <!-- Coluna Esquerda -->
+    <aside class="barra-esq">
+      <h2>Categorias</h2>
+      <ul>
+        <li><a href="#">Ficção</a></li>
+        <li><a href="#">Romance</a></li>
+        <li><a href="#">Fantasia</a></li>
+        <li><a href="#">Poesia</a></li>
+        <li><a href="#">Clássicos</a></li>
+        <li><a href="#">Crônica</a></li>
+        <li><a href="#">Novela</a></li>
+        <li><a href="#">Autoajuda</a></li>
+        <li><a href="#">Espiritualidade</a></li>
+      </ul>
+
+      <h3>Filtrar por</h3>
+      <ul>
+        <li><a href="#">Mais curtidas</a></li>
+        <li><a href="#">Mais comentadas</a></li>
+        <li><a href="#">Postadas recentemente</a></li>
+      </ul>
+
+      <div class="perfil">
+        <img src="perfil.jpg" alt="Foto de usuário">
+        <p>Ágatha Queiroz</p>
+        <button>NOVA RESENHA</button>
+      </div>
+    </aside>
+
+    <!-- Coluna Central -->
+    <main class="conteudo">
+      <div class="resenha">
+        <img src="livro_clarice_agua.webp" alt="Água Viva">
+        <div class="resenhas-cont">
+          <h3>Um jogo de palavras – O romance denso e intenso</h3>
+          <p>Por Ana Clara – 08/11/2025</p>
+          <div class="likes">♡ 890</div>
         </div>
-        <div>
-            <h2>FILTROS</h2>
-            <ul>
-            <li><a href="#" class="bt-esq">Mais recentes</a></li>
-            <li><a href="#" class="bt-esq" >Mais curtidos</a></li>
-            <li><a href="#" class="bt-esq" >Mais comentados</a></li>
-            <li><a href="#" class="bt-esq" >Autores populares</a></li>
-            <li><a href="#" class="bt-esq" >Categorias</a></li>
-            </ul>
+      </div>
+
+      <div class="resenha">
+        <img src="livro_pequeno_princ.jpg" alt="O Pequeno Príncipe">
+        <div class="resenhas-cont">
+          <h3>Um clássico que envelhece com a alma, não com o tempo</h3>
+          <p>Por Paulo – 13/11/2025</p>
+          <div class="likes">♡ 1000</div>
         </div>
-    </div>
-    <div id="meio">
-        <h2 style="position:absolute;">RESENHAS DA COMUNIDADE</h2>
-        <div class="resenha" id="resenha1">
-            <img src="livro_pequeno_princ.jpg" alt="O Pequeno Príncipe">
-            <h3>O Pequeno Príncipe - Uma Jornada de Descobertas e Lições de Vida</h3>
-            <p>POR Paulo<i> - 08/11/2025</i></p>
-            <p>Data: 10 de Outubro de 2025</p>
-           
-        <div class="resenha" id="resenha2">
-            <img src="livro_clarice_agua.webp" alt="" style="height: 225px;">
-            <h3>1984 - Uma Distopia que Reflete Nossas Preocupações Atuais</h3>
-            <p>Autor: João Pereira</p>
-            <p>Data: 22 de Novembro de 2025</p>
+      </div>
+
+      <div class="resenha">
+        <img src="livro_fiodor_humilhado.jpg" alt="Humilhados e Ofendidos">
+        <div class="resenhas-cont">
+          <h3>Por vezes preferimos ser humilhados</h3>
+          <p>Por Ágatha Queiroz – 20/05/2025</p>
+          <div class="likes">♡ 2500</div>
         </div>
-    </div>
-    </div>
-    <div id="bar-dir">
-        <h2>TOP AUTORES</h2>
-        <ul>
-            <li><a class="bt-autor">
-                Ana Silva - 120 resenhas</a></li>
-            <li><a class="bt-autor">
-                João Pereira - 95 resenhas</a></li>
-            <li><a class="bt-autor">
-                Maria Fernandes - 80 resenhas</a></li>
-            <li><a class="bt-autor">
-                Carlos Souza - 75 resenhas</a></li>
-            <li><a class="bt-autor">
-                Beatriz Lima - 60 resenhas</a></li>
-        </ul>
-    </div>
-</div>
-    <div class="rodape">
-        <p>&copy; 2025 LumiBooks. Todos os direitos reservados.</p>
-    </div></section>
+      </div>
+    </main>
+
+    <!-- Coluna Direita -->
+    <aside class="barra-dir">
+      <h2>Resenha Destaque</h2>
+      <div class="destaque">
+        <img src="livro_fiodor_humilhado.jpg" alt="Humilhados e Ofendidos">
+        <h4>Por vezes preferimos ser humilhados</h4>
+        <p>Até que ponto você se doaria? Dostoiévski fala nesta obra sobre...</p>
+      </div>
+      <div class="em-alta">
+      <h3>Tópicos em Alta</h3>
+      <ul>
+        <li><a href="#">Melhores livros do ano</a></li>
+        <li><a href="#">Autores essenciais</a></li>
+        <li><a href="#">Frases de livros</a></li>
+      </ul></div>
+    </aside>
+  </div>
+
+  <footer class="rodape">
+    <p>&copy; 2025 LumiBooks. Todos os direitos reservados.</p>
+  </footer>
+</section>
 </body>
 </html>
-
