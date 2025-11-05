@@ -10,19 +10,25 @@ body {
     background-color: #e8decd;
 }
 body::-webkit-scrollbar {
-  width: 10px;               /* largura do scrollbar */
+  width: 8px;               /* largura do scrollbar */
  }
 
 body::-webkit-scrollbar-track {
-  background:#391300;     /* color of the tracking area */
+  background:#391300e7;     /* cor do tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #e7c889;    /* cor da barra do scroll */
-  width: 10px;
+  background-color: #e7c8897e;    /* cor da barra do scroll */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 1.5px solid rgba(91, 61, 5, 0.49);  /* creates padding around scroll thumb */
 }
+  body::-webkit-scrollbar-track:hover {
+  background:#391300;     /* cor do tracking area */
+}
+
+  body::-webkit-scrollbar-thumb:hover {
+  background-color: #e7c889f1;    /* cor da barra do scroll */
+  }
 
 section{
     background-size: cover; 
@@ -47,7 +53,7 @@ iframe {
 header {
   display: flex;
   align-items: center;
-  height: 6vh;
+  height: 45px;
   background-image: linear-gradient(to right, #391300, #966c2e, #391300);
   position: fixed;
   top: 0;
@@ -70,16 +76,14 @@ header {
   gap: 10px;
   justify-self: end;
 }
-@media (max-width:570px){
- header{
-  height: 5vh;
- }
- .icons{
-   width: 90px;
-  height: 35px;
- }
+ /* --- Botão menu mobile --- */
+#bt-menu {
+  display: none;
+  background: none;
+  border: none;
   
 }
+
 /*////////////LOGO//////////////*/
 .logo {
   grid-area: logo;
@@ -92,94 +96,83 @@ header {
 
 .logo > img {
   width: auto;
-  height: 37px;
+  height: 34px;
 }
 
 .logo > #lumi {
-    font-size: 43px;
+    font-size: 38px;
     font-weight: lighter;
     color: #e6b345;
     text-decoration: none;
     position: relative;
 }
-@media (max-width: 570px){
-.logo > #lumi {
-    display: none;
-  } 
-    .logo> img{
-    height: 80%;
-  }
-}  
-@media (max-width:870px){
-  .logo > #lumi {
-    font-size: 30px; 
-  }
-  .logo> img{
-    height: 30px;
-  }
+#menuicon{
+  display: none;
 }
-/*/////barra de pesq./////*/ 
+
+
+/*//////barra de pesq.//////*/ 
 .container-input {
   grid-area: pesquisa;
   position: relative;
   justify-self: center;
+  width: 100%;
+  max-width: 500px; /* limite para desktop grande */
+  min-width: 180px;
 }
 
 .pesquisa {
-  width: 300px;
-  height: 38px;  
-  padding: 10px 40px 10px 10px;
-  border: solid 1px #551e1e;
+  width: 95%;
+  height: 38px;
+  padding: 8px 42px 8px 12px;
+  border: 1px solid #551e1e;
   border-radius: 13px;
-  transition: all .2s ease-in-out;
+  transition: all 0.25s ease-in-out;
   outline: none;
   font-size: 17px;
-  opacity: 0.8;
+  opacity: 0.85;
+  background-color: #fffef9;
 }
 
 .container-input img {
-  position: absolute;
-  width: 25px;
+  width: 20px;
   height: auto;
+  position: absolute;
   top: 50%;
-  right: 7px;
+  right: 12px;
   transform: translateY(-50%);
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .pesquisa:focus {
   opacity: 1;
-  width: 550px;
   background: #fdf8e3;
-  border: 1px solid #ba6e05;
-  border-radius: 10px;
+  border-color: #ba6e05;
+  box-shadow: 0 0 4px #c2953a80;
 }
+
 .bt-pesquisa {
   position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 38px;
-    height: 38px;
-    border: solid 1px #00000080;
-    background: #e6b34585;
-    border-radius: 1px 13px 13px 1px;
-    cursor: pointer;
-  }
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border: none;
+  background: #e5c688;
+  border: 1px solid #551e1e;
+  border-radius: 0 13px 13px 0;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+    
 .pesquisa:focus + .bt-pesquisa {
   background-color: #e6b345;
+  border-color: #ba6e05;
   border-radius: 1px 10px 10px 1px;
 }
-@media (max-width:700px){
- .container-input{
-  width: 150px;
- }
- .pesquisa{
-  width: 150px;
- }
- .pesquisa:focus{
-  width: 250px;
- }
-}
+
+
 /*/////////LOGIN/////////*/
 .actionbutton {
   grid-area: icons;
@@ -188,11 +181,11 @@ header {
     align-items: center;
     text-decoration: none;
     color: white;
-   width: 38px;
-    height: 38px;
+   width: 37px;
+    height: 37px;
     border-radius: 13px;
-    background-color: #bd8305;
-    border: solid 2px #cda35b;
+    background-color: #c89b3c;
+    border: solid 1.5px #e5c688;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -248,16 +241,10 @@ header {
   color: white;
   font-size: 0px;
 }
+
 /*///////////////////// MENU //////////////////////*/
 .menu{
-  display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(6, 1fr);
   position: fixed;
-  justify-content: space-around;
-  align-items: center; 
-  align-content: center;
-  justify-items: center; 
   top: 6vh;
   width: 100%;
   height: 4.5vh;
@@ -265,9 +252,15 @@ header {
   padding: 5px;
   border: 1px solid #7e4e1881;
   background-color: #e8decd;
-  animation: 3s ease-in-out;
+  animation: 0.5s ease-in-out;
   z-index: 5;
-   
+  display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+  justify-content: space-around;
+  align-items: center; 
+  align-content: center;
+  justify-items: center; 
 }
 .menu>a{ 
     text-decoration: none;
@@ -276,11 +269,11 @@ header {
     font-weight: lighter;
 }
 .menu>a:hover{
- width: 150px;
+ width: 203px;
   height: 5vh;
   color: #bd8305;;
   background: #efeae1dc;
-  transition: width 3.5s;
+  transition: width 0.5s;
   display: flex;
   align-items: center;
   justify-content: space-around;;
@@ -323,7 +316,162 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/*////////////////////// MEDIAS ///////////////////////*/
+/* --- tablet --- */
+@media (max-width: 950px) {
 
+  header{
+    height: 50px;
+  }
+  .cabecalho {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "logo pesquisa  icons";
+    gap: 8px;
+  }
+
+   .container-input {
+    max-width: 380px;
+  }
+  .pesquisa {
+    height: 34px;
+    font-size: 16px;
+  }
+  .bt-pesquisa {
+    width: 34px;
+    height: 34px;
+  }
+  .container-input img {
+    width: 18px;
+    right: 10px;
+  }
+
+  .icons {
+    gap: 6px;
+  }
+
+  .logo > #lumi {
+    font-size: 26px;
+  }
+
+  .logo > img {
+    height: 26px;
+  }
+  .actionbutton{
+  width: 33px;
+  height: 33px;
+  border-radius: 10px;
+ }
+ .iconbt{
+  height: 24px;
+  width: auto;
+ }
 }
 
 
+/* --- celular --- */
+@media (max-width: 650px) {
+  iframe{
+    height: calc(100vh - 5vh);
+    top: 5vh;
+  }
+  body::-webkit-scrollbar {
+  width: 3.5px;               /* largura do scrollbar */
+ }
+
+  header{
+    height: 45px;
+  }
+  .cabecalho {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo pesquisa icons";
+  }
+
+  .container-input {
+    max-width: 280px;
+  }
+  .pesquisa {
+    height: 32px;
+    font-size: 15px;
+    padding-right: 38px;
+  }
+  .bt-pesquisa {
+    width: 32px;
+    height: 30px;
+    right: 2px;
+  }
+  .container-input img {
+    width: 16px;
+  }
+
+  /* Menu escondido por padrão */
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    top: 6vh;
+    position: absolute;
+    left: 0;
+    z-index: 9;
+  }
+  .menu.show {
+    display: flex;
+  }
+  .menu > a {
+    padding: 12px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #7e4f18;
+    width: 100%;
+    text-align: center;
+  }
+  #bt-menu {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  color: #c89b3c;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 20;
+  width: fit-content;
+  padding: 0px 5px 0px 0px;
+  position: relative;
+  grid-area: logo;
+  height: 30px;
+  bottom: 1px;
+  right: 6px;
+  }
+
+  .logo > #lumi {
+    display: none;
+  }
+  .logo > img {
+    height: 30px;
+    margin-left: 10px;
+    left: 20px;
+    position: relative;
+  }
+}
+
+/*cel p*/
+@media (max-width: 480px) {
+ .container-input {
+    max-width: 220px;
+  }
+  .pesquisa {
+   height: 30px;
+   font-size: 14px;
+   padding-right: 36px;
+   position: relative;
+   left: 23px;
+  }
+  .bt-pesquisa {
+    width: 29px;
+    height: 30px;
+  }
+  .container-input img {
+    width: 15px;
+    right: 10px;
+  }
+}

@@ -10,6 +10,7 @@
     <div id="pagina-conteudo">
     <header id="header">
         <div class="cabecalho">
+            <button id="bt-menu" aria-label="Abrir menu">&#9776;</button> <!--botão do menu mobile-->
             <a href="pg_inicial.html" target="conteudo" class="logo">
                 <img src="lua-crescente.png" alt="Logo LumiBooks"> <!--substituir pela logo oficial-->
                 <h1 id="lumi">LUMIBOOKS</h1> 
@@ -30,7 +31,7 @@
             </a>
            </div>
         </div>
-        <nav class="menu">   
+        <nav class="menu" id="menu">   
             <a href="pg_inicial.html" target="conteudo">LIVROS</a> 
             <a href="pg_everse.html" target="conteudo">E-VERSE</a>
             <a href="pg_planos.html" target="conteudo">PLANOS</a>
@@ -42,8 +43,27 @@
         <iframe name="conteudo"></iframe><!--o iframe vai subistuir o conteudo pelo target escolhido no nav -->
       
     </div>  
-    <div class="rodape">
-        
-    </div>
+    <div class="rodape"></div>
+    <script>
+    const btMenu = document.getElementById('bt-menu');
+    const menu = document.getElementById('menu');
+
+    btMenu.addEventListener('click', (event) => {
+    event.stopPropagation(); // evita que o clique feche imediatamente
+    menu.classList.toggle('show');
+    });
+
+    // Fecha o menu ao clicar fora dele
+    document.addEventListener('click', (event) => {
+    const isClickInsideMenu = menu.contains(event.target);
+    const isClickOnButton = btMenu.contains(event.target);
+
+    // Se o clique for fora do menu e fora do botão → fecha
+    if (!isClickInsideMenu && !isClickOnButton)  {
+      menu.classList.remove('show');
+    }
+    });
+    </script>
+
 </body>
 </html>
