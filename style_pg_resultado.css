@@ -6,6 +6,7 @@ section{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 6vh 10vh 24vh 25vh 26vh 10vh;
+    background-color: #e8decd;
     
 }
 
@@ -244,3 +245,79 @@ h2,#preco{
   #BOTAO{
     color: #392004c8;
   }
+
+  @media (max-width: 480px){
+
+.alinha2{
+  grid-column: 2;
+  grid-row: 7/9;
+}
+
+.alinha3{
+  grid-column: 2;
+  grid-row: 10/12;
+}
+
+
+
+
+  }
+
+
+  @media  (max-height:481px) and (max-width: 950px) and (min-width:481px){
+img{
+  height: 35%;
+}
+
+h2,#preco{
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+#departamento{
+    font-size: 50%;
+}
+
+#resultado{
+  font-size: 50%;
+}
+
+#ofertas{
+  font-size: 50%;
+}
+
+#avaliacao{
+  font-size: 50%;
+}
+
+#formato{
+  font-size: 50%;
+}
+
+#img_estrela{
+   margin-top: 0%;
+  bottom: 46%;
+  position: absolute;
+  left: -117px;
+}
+
+#fundo{
+   width: 90%;
+    height: 90%;
+}
+#fundo2{
+    width: 90%;
+    height: 90%;
+}
+
+#fundo3{
+   width: 90%;
+    height: 90%;
+}
+
+ .filter-bar select{
+   height: 27px;
+
+}
+
+}
