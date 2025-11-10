@@ -256,7 +256,7 @@ strong{font-size: 23px;}
   /* Banner */
   .baner > h1 {
     font-size: 19px;
-    left: -26px;
+    left: -21px;
   }
 
   /* Notícia principal */
@@ -309,3 +309,4 @@ strong{font-size: 23px;}
   .rodape{
     top: 125%;
   }}
+
