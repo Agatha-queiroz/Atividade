@@ -234,10 +234,10 @@ input{
     }
 
   .quantidade-container {
-          top: -252px;
+          top: -224px;
         justify-content: center;
-        left: 319px;
-        width: 120px;
+        left: 209px;
+        width: 84px;
     }
      #bbb{    left: 10%;
         bottom: 12%;
@@ -301,3 +301,4 @@ input{
     max-width: 230px;
   }
 }
+
