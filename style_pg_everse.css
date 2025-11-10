@@ -1,23 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-* { margin:0}
-
-
 section{
-     background-image: url("4610a1f1-03f0-4890-be1a-de5c7fc20266.png");/* imagem de fundo*/
+  background-image: url("4610a1f1-03f0-4890-be1a-de5c7fc20266.png");/* imagem de fundo*/
     background-size: cover; 
     background-position: center;
-    position: relative;
-  
-}
-
-img{
-  background-size: cover; /* fundo cobrir tudo*/
-  width: 100%; /* imagem ocupar 100% de largura*/
-  max-height: 100vh; /* limite de altura máxima*/
-  position: absolute;
-  z-index: 1; /*mover a imagem para frente*/
-  object-fit: cover;/*ajuda a imagem manter a proporção*/
- 
+    position: fixed;
 }
 
  #titulo_everse{ /*parte do título*/
@@ -31,7 +16,6 @@ img{
     font-family: "Tinos";
     font-weight: 100; /*deixa a letra mais fina*/
     width: 900px;
-    z-index: 3;
 }
 .texto{ /* parte do texto*/
     position: absolute;
@@ -44,7 +28,6 @@ img{
     font-size: 26px;
     width: 900px;
     line-height: 40px;
-    z-index: 4;
 }
 
 .botao { /*o botão*/
@@ -56,15 +39,11 @@ img{
     font-size: 20px; /* tamanho da fonte*/
     font-family: "Playfair Display"; /* nossa fonte */
     cursor: pointer; /* muda o curso do mouse para uma setinha*/
-    z-index: 7; /* trazer o botão para frente*/
+    z-index: 2; /* trazer o botão para frente*/
     position: absolute;
     top:450px; /* colocar o botão embaixo do texto*/
     left: 5%; /* distância da esquerda*/
     letter-spacing: 2px; /* espaço entre as palavras*/
-    height: 40px;
-    width: 200px;
-    font-size: 90%;
-
     
   }
   .cont{
@@ -80,61 +59,58 @@ img{
     background-color: #C89B3C;  /* muda para dourado mais claro */
     color: #000; /* texto preto */
   }
-
- @media (max-width: 480px) {
-
-    img {
-      
-      height: 100vh;
-      object-fit:cover ;
-      object-position:  70%; /*parte da imagem que quer mostrar mais*/
-       
-      }
-      
-    #titulo_everse {
-      margin-top: 50%;
-      left: 8%;
-      font-size: 12px;
-      width: 100%;
-      letter-spacing: 3px;
-      text-align: left;
-    }
   
-    .texto {
-      margin-top: 15%;
-      left: 8%;
-      width: 100%;
-      font-size: 13px;
-      line-height: 18px;
-    }
-  
-    .botao {
-      margin-top: 1%;
-      left: 8%;
-      width: 80%;
-      height: 28%;
-      font-size: 10px;
-    }
-  
- }
+/* ----- Tablets até 992px ----- */
+@media (max-width: 992px) {
 
-    
-@media  (max-height:481px) and (max-width: 950px) and (min-width:481px)  {
-    
-  #titulo_everse{
-    font-size: 30px;
-    margin-top: 15%;
+  #titulo_everse {
+    font-size: 20px;
+    max-width: 700px;
+    top: 96px;
   }
 
-.texto{
-  font-size: 18px;
-  line-height: 20px;
-  margin-top: 2%;
+  .texto {
+    font-size: 22px;
+    line-height: 34px;
+    max-width: 700px;
+  }
+
+  .botao {
+    font-size: 18px;
+    padding: 8px 24px;
+  }
 }
 
-.botao{
- top:0;
- margin-top:180%;
-}
+/* ----- Celulares grandes até 768px ----- */
+@media (max-width: 768px) {
+
+  #titulo_everse {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+  .texto {
+        font-size: 19px;
+        line-height: 28px;
+        width: 60vh;
+        top: 180px;}
+
+  .botao {
+    font-size: 17px;
+    padding: 6px 20px;
+    width: 270px;
+  }
 }
 
+/* ----- Celulares pequenos até 480px ----- */
+@media (max-width: 480px) {
+
+  #titulo_everse {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+ .texto {
+        font-size: 16px;
+        line-height: 25px;
+        width: 46vh;
+        top: 180px;}}
