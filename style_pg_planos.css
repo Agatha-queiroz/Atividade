@@ -127,7 +127,7 @@ background-image: url(lumi.png);
 /* --------- Celulares grandes --------- */
 @media (max-width: 500px) {
   section{
-    height: 120vh;
+    height: 200vh;
     flex-direction: column;
 
   }
@@ -140,7 +140,17 @@ background-image: url(lumi.png);
 .planos{
       top: 119px;
     position: relative;
+        width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 20px;
+    flex-direction: column;
 }
+
 
   .plano_plano {
     width: 100%;
