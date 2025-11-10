@@ -208,3 +208,117 @@ display: flex;
   right: 6px;
   position: relative;
 }
+/* ---------------- RESPONSIVIDADE ---------------- */
+
+/* Tablets */
+@media (max-width: 992px){ 
+
+  #img-livros, #img-livros2 { width: 100%;  
+    border-top: solid 16px #c89b3c;
+  border-bottom: solid 15px #c89b3c;
+     }
+   #blc1,#blc2,#blc3{
+    top: 340px;
+   }
+   #blc1{
+    left: 35%;
+   }
+   #blc2{
+    left: 48%;
+
+   }
+   #blc3{
+    left: 60%;
+   }
+   .btn-planos{
+    top: 230px;
+   }
+   #txt1 { top: 20px; }
+  #txt2 { top: 65px; }
+  }
+/* Celulares grandes */
+@media (max-width: 768px) {
+
+  #txt1 { font-size: 20px; }
+  #txt2 { font-size: 32px; }
+
+  .cardcontainer {
+    width: 210px;
+    height: 250px;
+  }
+
+  .message-box { width: 160px; }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+
+  #txt1 { font-size: 18px; 
+    z-index: 3;
+    top: 292px;
+    position: absolute;
+    color: #391300;
+  }
+  #txt2 { font-size: 26px;
+     z-index: 3;
+    top: 35px;
+    position: absolute;
+    color: #391300;}
+
+  .btn-planos { font-size: 16px; }
+
+  #img-livros{
+    left: 0px;
+    width: 50%;
+  height: 130px; 
+  position: absolute;
+  z-index: 2;
+  top: 125px;
+  border-top: solid 15px #c89b3c;
+  border-bottom: solid 15px #c89b3c;
+
+}
+   #img-livros2 {
+    right: 0px; 
+    width: 50%;
+    height: 130px;
+  position: absolute;
+    z-index: 2;
+    top: 125px;
+ border-top: solid 15px #c89b3c;
+  border-bottom: solid 15px #c89b3c;
+   }
+   #blc1,#blc2,#blc3{
+    top: 243px;
+   }
+   #blc1{
+    left: 25%;
+   }
+   #blc2{
+    left: 45%;
+
+   }
+   #blc3{
+    left: 65%;
+   }
+
+  .cardcontainer {
+    width: 180px;
+    height: 220px;
+    right: 10px;
+    bottom: 15px;
+  }
+
+  .message-box {
+    width: 140px;
+    font-size: 13px;
+  }
+
+  .message-send { height: 50px; }
+
+  .button-send {
+    width: 52px;
+    height: 28px;
+    font-size: 9px;
+  }
+}
