@@ -167,3 +167,145 @@ strong{
     position: relative;
     bottom: 45px;
 }
+@media (max-width: 1000px) {
+
+  #noticias-todas {
+    grid-template-columns: 1fr 1fr;
+  }
+
+      .baner {
+        height: 142px;
+        top: 35px;
+        position: relative;
+    }
+
+  #banner {
+    height: 160px;
+  }
+
+      .baner > h1 {
+        font-size: 32px;
+        top: 29px;
+    }
+
+
+  #noticia-princ {
+    grid-template-columns: 1.3fr 0.8fr;
+    padding: 30px;
+    height: 315px;
+  }
+strong{font-size: 23px;}
+  #noticia-princ h1 {
+    font-size: 20px;
+    line-height: 42px;
+    width: 320px;
+  }
+
+  #noticia-princ h2 {
+            font-size: 16px;
+        width: 320px;
+        top: 5px;
+    
+  }
+  #not-sec1 img, #not-sec2 img {
+    height: auto;
+    width: 95%;
+    margin-top: 10px;
+  }
+  button{
+    margin-top: 50px;
+  }
+   #not-sec1 h1, #not-sec2 h1 {
+    font-size: 11px;
+    line-height: 22px;
+    width: 174px;
+  }
+
+  #not-sec1 h2, #not-sec2 h2 {
+        font-size: 10px;
+        width: 174px;
+        top: 0px;
+  }
+  #not-sec1 p, #not-sec2 p {
+    font-size: 12px;
+    bottom: 11px;
+  }
+  .rodape{
+    top: 100%;
+  }
+
+}
+
+/* Celulares pequenos */
+@media (max-width: 500px) {
+
+  /* Layout principal em 1 coluna */
+  #noticias-todas {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "baner"
+      "not-prin"
+      "not-sec1"
+      "not-sec2";
+    gap: 20px;
+  }
+.baner{
+    height: 120px;
+}
+  /* Banner */
+  .baner > h1 {
+    font-size: 19px;
+    left: -26px;
+  }
+
+  /* Notícia principal */
+  #noticia-princ {
+    grid-template-columns: 1fr; /* imagem fica abaixo automaticamente */
+    padding: 15px;
+    grid-template-columns: 1.3fr 0.8fr;
+    height: 315px;
+  }
+strong{font-size: 23px;}
+#noticia-princ img{
+    width: 0px;
+    height: 0px;
+}
+  #noticia-princ h1 {
+    font-size: 20px;
+    line-height: 42px;
+    width: 320px;
+  }
+
+  #noticia-princ h2 {
+            font-size: 16px;
+        width: 320px;
+        top: 5px;
+    
+  }
+  #not-sec1 img, #not-sec2 img {
+    height: auto;
+    width: 70%;
+    margin-top: 10px;
+  }
+  button{
+    margin-top: 50px;
+  }
+   #not-sec1 h1, #not-sec2 h1 {
+    font-size: 11px;
+    line-height: 22px;
+    width: 174px;
+  }
+
+  #not-sec1 h2, #not-sec2 h2 {
+        font-size: 10px;
+        width: 174px;
+        top: 0px;
+  }
+  #not-sec1 p, #not-sec2 p {
+    font-size: 12px;
+    bottom: 0px;
+  }
+  .rodape{
+    top: 125%;
+  }}
