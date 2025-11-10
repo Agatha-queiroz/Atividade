@@ -218,7 +218,7 @@ display: flex;
   border-bottom: solid 15px #c89b3c;
      }
    #blc1,#blc2,#blc3{
-    top: 340px;
+    top: 316px;
    }
    #blc1{
     left: 35%;
@@ -322,3 +322,4 @@ display: flex;
     font-size: 9px;
   }
 }
+
