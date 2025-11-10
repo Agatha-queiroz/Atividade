@@ -3,6 +3,7 @@
 
 
 section{
+     background-image: url("4610a1f1-03f0-4890-be1a-de5c7fc20266.png");/* imagem de fundo*/
     background-size: cover; 
     background-position: center;
     position: relative;
@@ -136,3 +137,4 @@ img{
  margin-top:180%;
 }
 }
+
