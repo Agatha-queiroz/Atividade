@@ -1,49 +1,65 @@
 /*///////////////////// PG_PLANOS //////////////////////*/
 section{
-    background-image: url(lumi.png);
-    background-size: cover; 
+background-image: url(lumi.png);
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-size: cover;
     background-position: center;
-    position: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 #titulo_plano{
     position: absolute;
-    top: -60px;
+    top: 46px;
     left: 50%;
     transform: translateX(-50%);
     width: 160vh;
     color: #f7f1e7;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: lighter;
     text-align: center;
     padding: 10px;
     font-family: 'playfair display';
 }
-.planos{
-  position: relative;
-  top: 13vh;
+.planos {
+  width: 100%;
   display: flex;
-  justify-content: center; 
-  align-items: center;     
-  gap: 30px;               
-  flex-wrap: wrap;         
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
   padding: 20px;
+  margin-top: 20px;
 }
-.plano_plano{
-  height: 450px;
-    top: 20px;
-    background-color: #e8decde3;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    font-size: 20px;
+
+.plano_plano {
+  background-color: #e8decde3;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 444px;
+  min-height: 450px;
+  padding: 20px;
+  margin: 10px;
+  font-size: 20px;
+  color: #372a28;
+  font-family: 'playfair display', serif;
+  align-items: center;
+    justify-content: center;
+    top: 45px;
     position: relative;
-    margin: 35px;
-    flex-wrap: nowrap;
+}
+
+.plano_plano > h2 {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
     color: #372a28;
-    font-family: 'playfair display', serif;   
+    font-family: 'playfair display', serif; 
+      
 }
 .plano_plano>h2{
     font-size: 40px;
@@ -57,8 +73,11 @@ section{
     padding: 10px;
     font-family: 'playfair display';
 }
+#22{
+  line-height: 2.6;
+}
 .texto_planos{
-  font-size: 18px;
+  font-size: 18px;}
 .texto_planos{
   font-size: 18px;
     line-height: 1.6;
@@ -67,4 +86,95 @@ section{
     margin: 10px 10px;
     padding: 5px 10px;
     font-family: 'Tinos', serif;
+}
+/* RESPONSIVIDADE                   */
+/* ================================ */
+
+/* --------- Tablets --------- */
+@media (max-width: 992px) {
+  iframe{
+    top:6vh;
+  }
+  section{
+    height: 100vh;
+  }
+
+  #titulo_plano {
+    font-size: 23px;
+    width: 500px;
+  }
+.planos{
+    flex-wrap: nowrap ; top: 41px;
+    position: relative;
+}
+  .plano_plano {
+    width: 400px;
+       height: 440px;
+  }
+  #22{
+    line-height: 2.1;
+  }
+  .texto_planos {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    font-weight: 500;
+    padding: 5px 10px;
+    font-family: 'Tinos', serif;
+}
+}
+
+/* --------- Celulares grandes --------- */
+@media (max-width: 500px) {
+  section{
+    height: 120vh;
+    flex-direction: column;
+
+  }
+
+  #titulo_plano {
+           font-size: 24px;
+        width: 333px;
+        top: -96px;
+    }
+.planos{
+      top: 119px;
+    position: relative;
+}
+
+  .plano_plano {
+    width: 100%;
+    max-width: 360px;
+
+  }
+  button{
+    width: 185px;
+  }
+}
+
+/* --------- Celulares pequenos --------- */
+@media (max-width: 480px) {
+
+  #titulo_plano {
+    font-size: 21px;
+  }
+
+  .plano_plano {
+    width: 100%;
+    max-width: 330px;
+    padding: 18px;
+  }
+
+  .plano_plano > h2 {
+    font-size: 28px;
+  }
+
+  .preco_plano {
+    font-size: 18px;
+  }
+
+  .texto_planos {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
