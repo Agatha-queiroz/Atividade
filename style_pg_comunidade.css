@@ -190,15 +190,258 @@ h2,h3{
   color: #bd8305;
 }
 
-/* Responsividade */
+/* =============================== */
+/* LAYOUT GERAL                    */
+/* =============================== */
+
+.layout {
+  display: grid;
+  grid-template-columns: 1.2fr 2.2fr 1.3fr;
+  gap: 20px;
+  padding: 20px 50px;
+}
+
+/* =============================== */
+/* COLUNA ESQUERDA                 */
+/* =============================== */
+
+.barra-esq h2, 
+.barra-esq h3 {
+  margin-bottom: 10px;
+  color: #4b2c07;
+}
+
+.barra-esq ul {
+  margin-bottom: 15px;
+}
+
+.barra-esq a {
+  text-decoration: none;
+  color: #7e4f18;
+  display: block;
+  margin: 4px 0;
+}
+
+.barra-esq a:hover {
+  color: #bd8305;
+}
+
+/* Perfil */
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #3a2b1640;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.perfil img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.perfil p {
+  margin: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #7e4f18;
+}
+
+/* =============================== */
+/* COLUNA CENTRAL (CONTEÚDO)       */
+/* =============================== */
+
+.conteudo {
+  background: #d9c4ab;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.resenhas-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.resenha {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.resenha img {
+  width: 110px;
+  height: 150px;
+  border-radius: 4px;
+}
+
+.resenha h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.resenha p {
+  font-size: 14px;
+  color: #3a2b16;
+}
+
+.likes {
+  color: #7e4f18;
+  margin-top: 10px;
+}
+
+/* =============================== */
+/* COLUNA DIREITA                  */
+/* =============================== */
+
+.barra-dir {
+  background-color: #f3e7d3;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.barra-dir h2, 
+.barra-dir h3 {
+  margin-bottom: 10px;
+}
+
+.barra-dir a {
+  color: #7e4f18;
+  text-decoration: none;
+}
+
+.barra-dir a:hover {
+  color: #bd8305;
+}
+
+.destaque {
+  background-color: #3a2b1640;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+
+.destaque img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: block;
+}
+
+.destaque h4 {
+  font-size: 16px;
+  margin: 5px 10px;
+  color: #391300;
+}
+
+.destaque p {
+  font-size: 14px;
+  color: #5b4a2c;
+  margin: 5px 10px;
+}
+
+.em-alta {
+  margin-top: 30px;
+}
+
+/* =============================== */
+/* RESPONSIVIDADE                  */
+/* =============================== */
+
+/* Tablets */
+@media (max-width: 950px) {
+
+.banner{
+ top: 49px;
+}
+  .banner h1 {
+    font-size: 22px;
+  }
+}
+
+/* Tablets médios */
 @media (max-width: 950px) {
   .layout {
     grid-template-columns: 1fr;
+    padding: 20px;top: 42px;
+        position: relative;
+    
   }
-  .barra-esq, .barra-dir {
-    order: 2;
+
+  .barra-esq, .barra-dir { order: 2; }
+  .conteudo { order: 1; }
+
+  .resenha {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
+  .resenha img {
+    width: 140px;
+    height: 180px;
+  }
+    .rodape{
+    top: 369%;
+  }
+}
+
+/* Celulares grandes */
+@media (max-width: 568px) {
+
+  .banner {
+    height: 60px;
+     top:13px;
+  }
+
+  .banner img {
+    height: 60px;
+  }
+
+  .banner h1 {
+    font-size: 20px;
+  }
+
+  .resenha img {
+    width: 120px;
+    height: 160px;
+  }
+  .rodape{
+    top: 369%;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+
+  .banner {
+    height: 55px;
+  }
+
+  .banner img {
+    height: 55px;
+  }
+
+  .banner h1 {
+    font-size: 18px;
+  }
+
+  .resenha img {
+    width: 100px;
+    height: 140px;
+  }
+
   .conteudo {
-    order: 1;
+    padding: 15px;
+  }
+
+  .perfil p {
+    font-size: 18px;
   }
 }
