@@ -296,7 +296,7 @@ button {
   cursor: pointer;
   color: #e6b345;
   background: #7e4f18;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 550;
   padding: 1px 15px;
 }
@@ -304,7 +304,8 @@ button {
 button:hover {
   background: #cda35b;
   color: #391300;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  width: 55vh;
 }
 
 /*///////////////////// RODAPÉ //////////////////////*/
@@ -384,10 +385,6 @@ button:hover {
   header{
     height: 45px;
   }
-  .cabecalho {
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: "logo pesquisa icons";
-  }
 
   .container-input {
     max-width: 280px;
@@ -445,8 +442,7 @@ button:hover {
   }
 
   .logo > #lumi {
-    display: none;
-  }
+    display: none;}
   .logo > img {
     height: 30px;
     margin-left: 10px;
@@ -454,9 +450,28 @@ button:hover {
     position: relative;
   }
 
-  .actionbutton {
-
+  .icons{
+    gap: 3px ;
   }
+  .actionbutton{
+    width: 30px;
+  }
+  #login:hover { 
+    width: 33px;}
+  #login::before  {
+     content: none;
+    }
+  #carrinho:hover { 
+    width: 33px;
+    border-radius: 13px;
+  }
+  #carrinho::before  {
+    content: none;
+  }
+  .actionbutton:hover #icon-user{
+    left: 8px;
+    position: relative;
+}
 }
 
 /*cel p*/
