@@ -457,7 +457,9 @@ button:hover {
     width: 30px;
   }
   #login:hover { 
-    width: 33px;}
+    width: 33px;
+    border-radius: 13px;
+  }
   #login::before  {
      content: none;
     }
@@ -496,3 +498,4 @@ button:hover {
     right: 10px;
   }
 }
+
